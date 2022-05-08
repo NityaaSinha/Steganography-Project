@@ -1,0 +1,55 @@
+.lw { font-size: 60px; }
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: teal;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #0E587C;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #0E587C;
+  color: white; 
+}
+p, li {
+font: 1em "Lucida Console", "Courier New", monospace;
+}
+h1 {
+font: 2em "Lucida Console", "Courier New", monospace;
+}
+h2 {
+font: 1.5em "Lucida Console", "Courier New", monospace;
+}
+h3 {
+font: 1.25em "Lucida Console", "Courier New", monospace;
+}
+div {
+  background-color: white;
+  color: #0E587C;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #0E587C;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
