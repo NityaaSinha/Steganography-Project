@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title> Hiding in Plain Sight </title>
+<link
+      
+      integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="lock.png" type="image/png">
+    <link href="style1.css" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <script src="steganography.min.js"></script>
+</head>
+<style> 
+.fixed-bg {
+  background-image: url("pexels-cottonbro-5473950.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        body {
+            text-align: center;
+        }
+input[type=text] {
+ 
+ 
+  box-sizing: border-box;
+border: 2px solid #0E587C;
+  border-radius: 4px;
+}
+    </style>
+    <header>
+    </header>
+ <div class="topnav" >
+  <a class="active" href="#home">Home</a>
+    <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+   <a href="#pp">Privacy policy</a>
+   <a href="#tou">Terms of Use</a>
+</div>
+<div class="fixed-bg"></div>
+
+<div style="height:800px;background-color:white;">
+<br>
+<br>
+
+<u><h2>ENCRYPTION</h2></u>
+<br>
+<br>
+<br>
+<h3>Choose an image:</h3>
+<br>
+<br>
+<input
+          class="ui primary button"
+          type="file"
+          name="pic"
+          accept="image/*"
+          onchange="readURL(this);"
+        />
+ 
+<br>
+<br>
+<h3>Enter Text to be encrypted:<h3>
+ <div class="ui input">
+          <input id="text" type="text" />
+        </div>
+<br>
+ <button class="ui secondary button" onclick="hideText()">
+          Hide Message Into Image
+        </button>
+<br>
+<br>
+  <div class="img-cont">
+          <div  class="img1">
+            <h3>Source Image</h3>
+
+            <img id="image1" src="" alt="" />
+          </div>
+
+
+          <div class="">
+            <h3>Message Encoded Image</h3>
+            <img id="image2" src="" alt="" />
+
+          </div>
+
+
+        </div>
+<div class="">
+
+      <input class="ui secondary button" type="file" name="pic" accept="image/*" onchange="decode(this);" />
+      <img class = "opa" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+      <h3>Decoded Text:</h3>
+      <h2 id="decoded"></h2>
+
+    </div>
+
+         
+          <div class="">
+            
+            <img id="image2" src="" alt="" />
+
+          </div>
+
+
+        </div>
+
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+
+</div>
+ <script src="index1.js"></script>
+</body>
+</html>
+
